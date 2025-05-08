@@ -1,0 +1,18 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '\dataset\Diff_dataset\train\Diff/f/'
+    gt_root: '\dataset\Diff_dataset\train\Diff/m/'
+    depth_root: '\dataset\Diff_dataset\train\Diff/d/'
+    text_root: '\Diff_dataset\train\Diff/t/'
+    trainsize: 352
+
+test_dataset:
+  IA:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '\dataset\Diff_dataset\Test\Diff/IA/f/'
+      gt_root: 'dataset\Diff_dataset\Test\Diff/IA/m/'
+      depth_root: '\dataset\Diff_dataset\Test\Diff/IA/d/'
+      text_root: '\dataset\Diff_dataset\Test\Diff/IA/t/'
+      testsize: 352
